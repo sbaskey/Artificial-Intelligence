@@ -177,4 +177,127 @@ S
 |
 ?
 
-
+1
+(
+n
+2
+−
+1)
+-puzzle
+Implement the
+(
+n
+2
+−
+1)
+-puzzle environment. Also, implement parity function using the following
+definition:
+•
+A position
+p
+i
+is said to occur after
+p
+j
+, if
+p
+i
+occurs to the right of
+p
+j
+in the same row or if
+p
+i
+occurs at any row below
+p
+j
+. This defines the ordering.
+•
+For a state
+s
+, let
+d
+(
+s
+)
+denote the number of rows + number of columns that the empty square
+is away from the bottom right corner.
+•
+Let
+I
+True
+= 1
+and
+I
+False
+= 0
+(this is known as
+indicator
+function).
+•
+For a state
+s
+, parity is given by
+mod
+(
+d
+(
+s
+) +
+∑
+p
+i
+,p
+j
+>p
+i
+I
+p
+j
+(
+s
+)
+<p
+i
+(
+s
+)
+,
+2)
+, where
+p
+i
+(
+s
+)
+is the
+number at the
+i
+th
+position.
+•
+mod
+(
+n,
+2)
+is equal to the remainder on dividing
+n
+by
+2
+.
+•
+Imagine the empty square to be
+n
+2
+.
+2    Robot Navigation
+Create the following navigation environment with blockades. Take
+G
+= 100
+(grid-size), the blocked
+places can be
+0
+’s and the other ones can be represented by
+1
+. The figure is only illustrative, and in a
+grid blocking would mean blocking the entire cell.
