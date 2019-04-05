@@ -189,8 +189,7 @@ Implement the
 n
 2
 −
-1)
--puzzle environment. Also, implement parity function using the following
+1)-puzzle environment. Also, implement parity function using the following
 definition:
 •
 A position
